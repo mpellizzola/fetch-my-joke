@@ -1,19 +1,34 @@
 # Fetch my joke
 
-Una semplice app che scarica una barzelletta e la mostra all'utente.
+App React + Vite + TypeScript che mostra una lista di utenti, un pulsante e una barzelletta.
 
 ## Installazione e uso
 
-Esegui `yarn` per installare le dipendenze, quindi avvia il dev server con `yarn dev` e apri `http://localhost:5173/` (o alla porta specificata nel terminale) in un browser.
+```bash
+yarn
+yarn dev
+```
 
-## Step 1
+Apri `http://localhost:5173/` (o la porta indicata nel terminale).
 
-Utilizzando l'URL `url` esportato da `Utility.ts`, crea un componente (usando `App.tsx` o altro) che scarichi una barzelletta tramite REST API e la stampi a video.
+Altri comandi:
 
-## Step 2
+```bash
+yarn build    # build di produzione
+yarn preview  # anteprima della build
+yarn lint     # ESLint
+```
 
-Modifica l'app in modo da stampare dei pulsanti che mostrino le categorie (che corrispondono all'array `categories` dentro `Utility.ts`) e che, premendoli, passino la categoria al componente in modo da visualizzare una barzelletta di quella categoria.
+## Cosa fa
 
-## Step 3
+- **Users** — elenco di utenti (`firstName`, `lastName`, `age`) da `src/users/`
+- **SimpleButton** — pulsante stilizzato in `src/simpleButton/`
+- **Joke** — barzelletta mostrata da `src/joke/` (al momento da mock, non ancora dalla API)
 
-Decora l'app con un minimo di CSS a piacimento.
+## API barzellette
+
+`src/Utility.ts` espone l’URL di [JokeAPI](https://v2.jokeapi.dev/) e le categorie selezionabili:
+
+`Any`, `Misc`, `Programming`, `Dark`, `Pun`
+
+Composizione URL: `baseUrl` + categoria + `params` (tipo `single`, con blacklist nsfw/racist/sexist/explicit).

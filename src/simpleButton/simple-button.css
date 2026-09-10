@@ -1,0 +1,14 @@
+#simpleButton {
+  background-color: #4f8cff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-bottom: 6px solid #1d5fd4;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#simpleButton:hover {
+  background-color: #3b7af0;
+}

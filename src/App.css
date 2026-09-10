@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  gap: 60px;
+  padding-inline: 60px;
+}
