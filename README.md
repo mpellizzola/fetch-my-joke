@@ -32,3 +32,7 @@ yarn lint     # ESLint
 `Any`, `Misc`, `Programming`, `Dark`, `Pun`
 
 Composizione URL: `baseUrl` + categoria + `params` (tipo `single`, con blacklist nsfw/racist/sexist/explicit).
+<!-- Decora l'app con un minimo di CSS a piacimento.
+
+
+DEMO: https://codesandbox.io/p/github/mpellizzola/fetch-my-joke/main -->
