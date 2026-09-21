@@ -5,11 +5,10 @@ export const Users = () => {
     <div>
       <h1>Users</h1>
       <ul>
-        {users.map((user) => (
-          <li key={`${user.firstName}-${user.lastName}`}>
-            {user.firstName}, {user.lastName}, {user.age}
-          </li>
-        ))}
+        <li>Marco Rossi, 27</li>
+        <li>Maria Bianchi, 35</li>
+        <li>Giovanni Verdi, 22</li>
+        <li>Luigi Neri, 41</li>
       </ul>
     </div>
   );
